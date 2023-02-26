@@ -1,0 +1,38 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+header{
+    background-color: rgb(131, 38, 38);
+}
+nav{
+    font-size: 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: end;
+}
+nav a{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+   
+}
+main{
+    min-height: 90vh;
+}
+
+.container-form{
+display:block;
+font-size: 20px;
+margin: 0 0 10px;
+font: 1em sans-serif;
+}
+footer{
+    background-color: rgb(40, 2, 2);
+}
