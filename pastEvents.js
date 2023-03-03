@@ -1,19 +1,25 @@
-const eventosPasados = document.querySelector('#container')
+/*se crea un nuevo array con los eventos pasados*/
+const nuevoArray = data.events.filter(card => 
+    card.date < data.currentDate)
+    console.log(nuevoArray)
 
-let tarjetas = ''
+    /*se captura elemnto de dom*/    
+const contenedorTarjetasPast = document.querySelector('#contenedor')
+/*se crea nuevas tarjetas*/
+let tarjetasGeneradas = crearTarjetas(nuevoArray)
+contenedorTarjetasPast.innerHTML = tarjetasGeneradas
 
-for(const dato of data.events) {
-    /*console.log(dato)*/
-    if(dato.currentDate > dato.date){
+function crearTarjetas(arrayDatos) {
+    let tarjetas = ''
+    for (const dato of arrayDatos) {
         tarjetas += `<div class="card" style="width: 18rem;">
-    <img src= ${dato.image} class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${dato.name}</h5>
-      <p class="card-text">${dato.description}</p>
-      <a href="#" class="btn btn-primary">Details</a>
-    </div>
-  </div>`
+        <img src= ${dato.image} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${dato.name}</h5>
+          <p class="card-text">${dato.description}</p>
+          <a href="#" class="btn btn-primary">Details</a>
+        </div>
+      </div>`
     }
+    return tarjetas
 }
-
-eventosPasados.innerHTML += tarjetas
