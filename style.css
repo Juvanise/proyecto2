@@ -5,7 +5,17 @@
 }
 
 header{
-    background-color: rgb(131, 38, 38);
+    min-height: 10vh;
+    /*background-color: rgb(131, 38, 38);*/
+    background-color: rgb(82, 142, 221);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.logo{
+
+    margin-right: 20px;
 }
 nav{
     font-size: 20px;
@@ -14,17 +24,18 @@ nav{
     justify-content: end;
 }
 nav a{
-    padding: 10px;
+    
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 22px;
+    margin: 5px;
+    font-size: 15px;
+    padding: 5px;
     text-decoration: none;
-
-   
+    justify-content: flex-end;
 }
 main{
-    min-height: 90vh;
+    min-height: 75vh;
 }
 
 .container-form{
@@ -33,9 +44,13 @@ font-size: 20px;
 margin: 0 0 10px;
 font: 1em sans-serif;
 }
-footer{
-    background-color: rgb(40, 2, 2);
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
 }
+
 #contenedor{
     display: flex;
     flex-wrap: wrap;
@@ -43,4 +58,49 @@ footer{
     gap: 3px;
     padding: 3px;
 
+}
+.card{
+    border-radius: 10px;
+    background-color: cadetblue;
+    box-shadow: 0 5px 15px rgb(36, 109, 111) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    padding: 3px;
+}
+.card-body{
+    background-color: rgb(55, 163, 167);
+    border-radius: 10px;
+    
+}
+
+.card-title{
+    text-align: center;
+}
+.card-price{
+    display: inline;
+    font-weight: bold;
+}
+.card-date{
+    font-weight: bold;
+}
+.card-img-top{
+    min-height: 30vh;
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    
+}
+btn btn-primary{
+    align-items: flex-end;
+}
+input{
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+}
+
+footer{
+    background-color: rgb(82, 142, 221)
 }
